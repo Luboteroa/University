@@ -18,7 +18,7 @@ public class Consultation {
         this.reason = reason;
         dog.Consultation(consultation);
         Diagnostic(reason);
-        System.out.println("\nFecha de la consulta:"+date);
+        System.out.println("\nFecha de la consulta: "+date);
         System.out.println("\n-------------------------------------------------------------------------------------\n");
     }
 

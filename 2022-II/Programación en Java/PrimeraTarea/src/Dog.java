@@ -2,6 +2,23 @@ import java.time.LocalDate;
 import java.util.LinkedList;
 
 public class Dog {
+    public static enum Race {
+        galgo,
+        terrier,
+        bulldog,
+        alaskan,
+        pastor,
+        boston,
+        french_puddle,
+        golden_retriever,
+        dachshund,
+        berger
+    }
+
+    public static enum Genre {
+        male,
+        female
+    }
     public final String name;
     private final LocalDate birth;
     private final Race race;
@@ -46,4 +63,6 @@ public class Dog {
         System.out.println("\n-------------------------------------------------------------------------------------\n");
     }
 }
+
+
 

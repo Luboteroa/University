@@ -1,3 +1,5 @@
+//This code name's Valentina. Such as beauty as her.
+
 import java.time.LocalDate;
 import java.util.LinkedList;
 
@@ -12,13 +14,13 @@ Github: https://github.com/Luboteroa
 public class MainClass {
     public  static  void main(String[] args)
     {
-        LinkedList<Person> people = new LinkedList<Person>();
+        LinkedList<Person> people = new LinkedList<>();
         LinkedList<Dog> dogs = new LinkedList<Dog>();
         LinkedList<Consultation> consultations = new LinkedList<Consultation>();
 
         //Make a first test of a person, dog and consultation
         people.add(new Person("Luis Carlos", 1002636974, "Calle 10D #35 A-27", "3116892134", LocalDate.of(2001,3,19)));
-        dogs.add(new Dog("Nana", LocalDate.of(2001,8,27), Race.golden_retriever, Genre.female, 13, people.get(0)));
+        dogs.add(new Dog("Nana", LocalDate.of(2001,8,27), Dog.Race.golden_retriever, Dog.Genre.female, 13, people.get(0)));
         consultations.add(new Consultation(dogs.get(0), Veterinarian.Augusto, "Presion Baja"));
 
         //Change owner of a dog already created
@@ -31,7 +33,7 @@ public class MainClass {
 
         //*Let's create new people and new Dogs
         people.add(new Person("Juan Felipe", 100263464, "Alfombre roja 123", "428465928", LocalDate.of(1977,12,30)));
-        dogs.add(new Dog("Firulais", LocalDate.of(2010,2,1), Race.bulldog, Genre.male, 21, people.get(2)));
+        dogs.add(new Dog("Firulais", LocalDate.of(2010,2,1), Dog.Race.bulldog, Dog.Genre.male, 21, people.get(2)));
         consultations.add(new Consultation(dogs.get(1), Veterinarian.Eduardo, "Gastroenteritis"));
 
         //Now let's see how many consultations 'Nana' has and what was said in every single one
