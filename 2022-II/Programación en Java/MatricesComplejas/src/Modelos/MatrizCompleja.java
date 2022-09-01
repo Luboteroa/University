@@ -29,9 +29,10 @@ public class MatrizCompleja {
     }
 
     private int getColumnas() {
-
+        return 0;
     }
 
     private int getFilas() {
+        return 0;
     }
 }
