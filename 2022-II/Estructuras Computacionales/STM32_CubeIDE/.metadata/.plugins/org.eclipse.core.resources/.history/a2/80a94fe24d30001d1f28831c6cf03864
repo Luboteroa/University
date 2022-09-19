@@ -1,0 +1,24 @@
+/*
+ * main.s
+ *
+ *  Created on: Sep 5, 2022
+ *      Author: User
+ */
+ .syntax unified
+
+.include "stm32l476_constants.s"
+
+.global main
+
+.section .text.main
+.type main,%function
+main:
+	ldr r0, =RCC_BASE
+	mov r1,1
+	bl DRV_RCC_AHB2ENR_Init
+
+loop:
+	nop
+	b loop
+
+.size main,.-main

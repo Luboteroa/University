@@ -1,0 +1,150 @@
+!SESSION 2022-09-02 11:38:43.364 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  C:\Users\User\Desktop\Non-Pushable Stuff\Computational Structures\00_Led_On_Drv_s\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\User\Desktop\Non-Pushable Stuff\Computational Structures\00_Led_On_Drv_s\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-02 11:43:02.065
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-02 11:43:02.128
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-02 11:43:05.144
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-02 11:43:06.865
+!MESSAGE Indexed '00_Led_On_Drv_s' (0 sources, 0 headers) in 0,014 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2022-09-02 11:43:36.368 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  C:\Users\User\Desktop\Non-Pushable Stuff\Computational Structures\00_Led_On_Drv_s\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\User\Desktop\Non-Pushable Stuff\Computational Structures\00_Led_On_Drv_s\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-02 11:43:39.825
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-02 11:43:39.878
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-02 11:43:43.935
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-02 11:43:44.416
+!MESSAGE Indexed '00_Led_On_Drv_s' (0 sources, 0 headers) in 0,008 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2022-09-05 09:32:25.481 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-05 09:32:50.737
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-05 09:32:50.874
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-05 09:33:01.330
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-09-05 09:38:38.248 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-05 09:38:51.883
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-05 09:38:51.974
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-05 09:38:58.903
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-05 09:41:15.002
+!MESSAGE Indexed '02_Led_Blink_s' (0 sources, 0 headers) in 0,003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-05 11:03:54.428
+!MESSAGE Indexed '02_Led_Blink_STKb_s' (3 sources, 53 headers) in 0.943 sec: 1,949 declarations; 2,811 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-05 11:21:47.314
+!MESSAGE Indexed '02_Led_Blink_STKb_s' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-05 11:23:02.748
+!MESSAGE Indexed '02_Led_Blink_STKb_s' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2022-09-09 09:41:23.977 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\Tareas\Tarea #1_LedON\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\Tareas\Tarea #1_LedON\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-09 09:41:35.182
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-09 09:41:35.255
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-09 09:41:41.484
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-09 09:41:42.126
+!MESSAGE Indexed 'Led_On_Mfshield' (0 sources, 0 headers) in 0,002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2022-09-09 09:41:54.005
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.NullPointerException
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:913)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1257)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-09 09:43:29.876
+!MESSAGE Indexed 'Led_On_Mfshield' (0 sources, 0 headers) in 0,001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-09 09:43:37.771
+!MESSAGE Indexed 'Led_On_Mfshield' (0 sources, 0 headers) in 0,001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2022-09-09 10:29:31.942 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  C:\Users\User\Desktop\Non-Pushable Stuff\Computational Structures\02_Led_Blink_s\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\User\Desktop\Non-Pushable Stuff\Computational Structures\02_Led_Blink_s\.project
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-09-09 10:29:35.739
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-09 10:29:43.892
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-09 10:29:43.979
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-09 10:29:51.601
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-09 10:29:52.588
+!MESSAGE Indexed '02_Led_Blink_s' (0 sources, 0 headers) in 0,003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2022-09-15 16:14:10.395 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-15 16:14:21.512
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-15 16:14:21.589
+!MESSAGE Log4j initialized with config file C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-15 16:14:28.445
+!MESSAGE Started RMI Server, listening on port 41337
