@@ -127,9 +127,15 @@ main:
 	bfc r5, #5, #1         	//Colocamos el bit 5 en 0 (High)
 	str r5, [r6,#GPIO_ODR]
 //A6
-	bfc r5, #6, #1           	//Colocamos el bit 6 en 0 (High)
+	ldr r6, =GPIOA_BASE
+	ldr r5, [r6,#GPIO_ODR]
+	bfc r5, #6, #1         	//Colocamos el bit 6 en 0 (High)
+	str r5, [r6,#GPIO_ODR]       	//Colocamos el bit 6 en 0 (High)
 //A7
-	bfc r5, #7, #1         	//Colocamos el bit 5 en 0 (High)
+	ldr r6, =GPIOA_BASE
+	ldr r5, [r6,#GPIO_ODR]
+	bfc r5, #7, #1         	//Colocamos el bit 7 en 0 (High)
+	str r5, [r6,#GPIO_ODR]       	//Colocamos el bit 5 en 0 (High)
 //B6
 	ldr r6, =GPIOB_BASE
 	ldr r5, [r6,#GPIO_ODR]

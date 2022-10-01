@@ -1,0 +1,9 @@
+21:46:55 **** Clean-only build of configuration Debug for project Led_On_Mfshield ****
+make -j12 clean 
+rm -rf ./Startup/startup_stm32l476rgtx.d ./Startup/startup_stm32l476rgtx.o
+rm -rf ./Src/main.d ./Src/main.o
+rm -rf Led_On_Mfshield.elf Led_On_Mfshield.list Led_On_Mfshield.map default.size.stdout
+ 
+
+21:46:55 Build Finished. 0 errors, 0 warnings. (took 172ms)
+

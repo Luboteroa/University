@@ -59,8 +59,8 @@ all: main-build
 main-build: Led_On_Mfshield.elf secondary-outputs
 
 # Tool invocations
-Led_On_Mfshield.elf Led_On_Mfshield.map: $(OBJS) $(USER_OBJS) C:\Users\User\Desktop\University\ Non-Pushable\ Stuff\Computational\ Structures\Led_On_Mfshield\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Led_On_Mfshield.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\User\Desktop\University Non-Pushable Stuff\Computational Structures\Led_On_Mfshield\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_On_Mfshield.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Led_On_Mfshield.elf Led_On_Mfshield.map: $(OBJS) $(USER_OBJS) C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras\ Computacionales\Tareas\Tarea\ #1_LedON\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Led_On_Mfshield.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\Tareas\Tarea #1_LedON\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_On_Mfshield.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

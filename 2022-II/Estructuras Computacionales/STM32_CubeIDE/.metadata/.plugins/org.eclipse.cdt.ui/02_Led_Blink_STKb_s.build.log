@@ -1,22 +1,10 @@
-11:23:23 **** Build of configuration Debug for project 02_Led_Blink_STKb_s ****
+20:54:47 **** Incremental Build of configuration Debug for project 02_Led_Blink_STKb_s ****
 make -j12 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/User/Desktop/GitHub/University/2022-II/Estructuras Computacionales/STM32_CubeIDE/02_Led_Blink_STKb_s/Drivers/STM32L4xx_DRV_ASM/Include" -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l476rgtx.d" -MT"Startup/startup_stm32l476rgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l476rgtx.o" "../Startup/startup_stm32l476rgtx.s"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/User/Desktop/GitHub/University/2022-II/Estructuras Computacionales/STM32_CubeIDE/02_Led_Blink_STKb_s/Drivers/STM32L4xx_DRV_ASM/Include" -x assembler-with-cpp -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o" "../Src/main.s"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/User/Desktop/GitHub/University/2022-II/Estructuras Computacionales/STM32_CubeIDE/02_Led_Blink_STKb_s/Drivers/STM32L4xx_DRV_ASM/Include" -x assembler-with-cpp -MMD -MP -MF"Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_SysTick.d" -MT"Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_SysTick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_SysTick.o" "../Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_SysTick.s"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/User/Desktop/GitHub/University/2022-II/Estructuras Computacionales/STM32_CubeIDE/02_Led_Blink_STKb_s/Drivers/STM32L4xx_DRV_ASM/Include" -x assembler-with-cpp -MMD -MP -MF"Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_gpio.d" -MT"Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_gpio.o" "../Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_gpio.s"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/User/Desktop/GitHub/University/2022-II/Estructuras Computacionales/STM32_CubeIDE/02_Led_Blink_STKb_s/Drivers/STM32L4xx_DRV_ASM/Include" -x assembler-with-cpp -MMD -MP -MF"Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_rcc.d" -MT"Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_rcc.o" "../Drivers/STM32L4xx_DRV_ASM/Source/stm32l476_drv_rcc.s"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/User/Desktop/GitHub/University/2022-II/Estructuras Computacionales/STM32_CubeIDE/02_Led_Blink_STKb_s/Drivers/STM32L4xx_DRV_ASM/Include" -x assembler-with-cpp -MMD -MP -MF"Drivers/STM32L4xx_DRV_ASM/Include/stm32l476_constants.d" -MT"Drivers/STM32L4xx_DRV_ASM/Include/stm32l476_constants.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_DRV_ASM/Include/stm32l476_constants.o" "../Drivers/STM32L4xx_DRV_ASM/Include/stm32l476_constants.s"
-arm-none-eabi-gcc -o "02_Led_Blink_STKb_s.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\GitHub\University\2022-II\Estructuras Computacionales\STM32_CubeIDE\02_Led_Blink_STKb_s\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_Led_Blink_STKb_s.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 02_Led_Blink_STKb_s.elf
- 
 arm-none-eabi-size   02_Led_Blink_STKb_s.elf 
-arm-none-eabi-objdump -h -S  02_Led_Blink_STKb_s.elf  > "02_Led_Blink_STKb_s.list"
    text	   data	    bss	    dec	    hex	filename
-    688	     12	   1564	   2264	    8d8	02_Led_Blink_STKb_s.elf
+    752	     12	   1564	   2328	    918	02_Led_Blink_STKb_s.elf
 Finished building: default.size.stdout
  
-Finished building: 02_Led_Blink_STKb_s.list
- 
 
-11:23:23 Build Finished. 0 errors, 0 warnings. (took 404ms)
+20:54:47 Build Finished. 0 errors, 0 warnings. (took 166ms)
 
