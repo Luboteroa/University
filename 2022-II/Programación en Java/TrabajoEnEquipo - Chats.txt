@@ -1,0 +1,14 @@
+Respecto al ejercicio siento, personalmente hablando, que fue una actividad muy enriquecedora debido a que cada uno de los integrantes de todos los grupos tuvieron que salirse de su
+comodidad y empezar a trabajar de una forma que creo que a muchos nos incomoda y es trabajar con las ideas de otros en equipo.
+
+Como cabeza del proyecto intenté estar al margen de cada uno de los grupos, sabiendo qué era lo que hacían y cómo lo hacían. Me encargué de generar el repositorio general en GitHub creando
+dentro de este distintas ramas de trabajo de desarrollo sobre cada uno de los grupos, también intenté dirigir el foco del proyecto sobre una idea recibida de un cliente escribiendo este 
+en una reunión general explicando a cada uno de los equipos cómo iban a trabajar y cuál era la idea y foco principal, para que cada uno de los equipos estuviera al margen de lo que se hacía.
+
+Me encargué de poder revisar cada uno de los avances individuales por grupo, sentándome y charlando con ellos, mirando código y resolviendo dudas, personalmente también tuve que leer sobre
+el cómo crear el chat, tuve que leer y mirar videos guía de cómo hacer comunicación TCP o UDP en Java, algo extraclase.
+
+A pesar de lo enriquecedor del trabajo tuve que enfrentarme a un problema general y es la desconfianza entre grupos, hubo un grupo en específico que se aisló completamente del trabajo y,
+a pesar de que terminaron de forma correcta el ejercicio, no aportaban nada al trabajo grupal, de hecho, lo rechazaban. Tengo que admitir que no supe muy bien cómo actuar para integrarlos.
+Sin embargo, siento que este proceso hace parte de la vida, el aprender a tratar humanamente a las personas y entender cómo funciona cada uno como ser individual para hacer un buen trabajo
+conjunto.

@@ -45,4 +45,9 @@ public class ServidorUDP {
             Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+    public static void ConfirmacionNombre(String nombreRegistro)
+    {
+
+    }
 }
