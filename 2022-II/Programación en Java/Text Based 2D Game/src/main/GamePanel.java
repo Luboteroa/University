@@ -1,30 +1,32 @@
 package main;
 
+import entity.Player;
+import tile.TileManager;
+
 import javax.swing.*;
 import java.awt.*;
-
-public class GamePanel extends JPanel implements Runnable
-{
-    //SCREEN SETTINGS!!
+public class GamePanel extends JPanel implements Runnable {
+    //SCREEN COMPONENTS MAIN GAME LOOP
+    //Screen Settings Variables
     final int originalTileSize = 16;                    //16x16 Tile
     final int scale = 3;
 
-    final int tileSize = originalTileSize * scale;      //FINAL TILE SCALE FOR NEW SCREENS RESOLUTION!
+    public final int tileSize = originalTileSize * scale;      //Final Tile Scale for current screen resolution (1920x1080)
                                                         //48x48 Tile
-    final int maxScreenCol = 16;
-    final int maxScreenRow = 12; //Screen ratio
-    final int screenWidth = tileSize * maxScreenCol;    //768 pixels
-    final  int screenHeight = tileSize * maxScreenRow;  //576 pixels
+    public int maxScreenCol = 16;
+    public int maxScreenRow = 12; //Screen ratio
+    public int screenWidth = tileSize * maxScreenCol;    //768 pixels
+    public   int screenHeight = tileSize * maxScreenRow;  //576 pixels
 
-    KeyHandler keyHandler = new KeyHandler();
+    KeyHandler keyHandler = new KeyHandler();           //KeyHandler for current buttons information
     Thread gameThread;
-    int playerX = 100;
-    int playerY = 100;
-    int playerSpeed = 4;
+    Player player = new Player(this, keyHandler);
+    TileManager tileManager = new TileManager(this);
 
     int FPS = 60;
     public GamePanel()
     {
+        //Set the previous settings to the current panel
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
         this.setBackground(Color.black);
         this.setDoubleBuffered(true);                   //All the drawing will be done in an offscreen painting buffer
@@ -39,57 +41,15 @@ public class GamePanel extends JPanel implements Runnable
         gameThread.start();
     }
 
-    /*
-    @Override
-    public void run() {
-        //int i = 0;
-        //GameLoop -- UPDATE
-        double drawInterval = 1000000000/FPS;                   //0.01666 seconds
-        double nextDrawTime = System.nanoTime() + drawInterval;
-
-       while (gameThread != null)
-        {
-            //As long as the gamePanel is open, it make a loop every frame
-            //System.out.println("Game Loop! " + i);
-            //i++;
-
-            long currentTime = System.nanoTime();               //Catch the time in nano seconds 1.000.000.000 Sec = 1 nSec
-            System.out.println("CurrentTime " + currentTime);
-
-            //1. Update Information such as character position
-            update();
-
-            //2. Redraw the screen with the updated information
-            repaint();
-
-
-            try
-            {
-                double remainingTime = nextDrawTime - System.nanoTime();
-                remainingTime = remainingTime/1000000;
-
-                if(remainingTime < 0)
-                    remainingTime = 0;
-
-                Thread.sleep((long) remainingTime);
-                nextDrawTime += drawInterval;
-
-            } catch (InterruptedException e)
-            {
-                throw new RuntimeException(e);
-            }
-        }
-    }
-    */
-
     public void run()
     {
+        //Use the gameThread to visualize the Update and RePaint method every single frame
         double drawInterval = 1000000000/FPS;
         double delta = 0;
         long lastTime = System.nanoTime();
         long currentTime;
 
-        while(gameThread != null)
+        while(gameThread != null)                               //While the window is open
         {
             currentTime = System.nanoTime();
 
@@ -105,34 +65,22 @@ public class GamePanel extends JPanel implements Runnable
         }
     }
 
-    public void update() {
-        if(keyHandler.upPressed == true)
-        {
-            playerY -= playerSpeed;
-        }
-        if(keyHandler.downPressed == true)
-        {
-            playerY += playerSpeed;
-        }
-        if(keyHandler.leftPressed == true)
-        {
-            playerX -= playerSpeed;
-        }
-        if(keyHandler.rightPressed == true)
-        {
-            playerX += playerSpeed;
-        }
+    public void update()
+    {
+        player.Update();
     }
 
     public void paintComponent(Graphics g)
     {
+        //Repaint all that player components inside the visualized game
         super.paintComponent(g);
 
         Graphics2D g2 = (Graphics2D)g;                       //Change graphics to graphics 2D
 
-        g2.setColor(Color.white);
+        //We draw using partition of code
+        tileManager.Draw(g2);                                //First draw tiles
+        player.Draw(g2);                                     //After that draw the player above it
 
-        g2.fillRect(playerX, playerY, tileSize, tileSize);            //Draw a rectangle
         g2.dispose();
     }
 }

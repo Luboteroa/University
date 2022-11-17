@@ -7,12 +7,14 @@ public class KeyHandler implements KeyListener {
     //LISTEN EVERYTHING IN THE KEYBOARD
     public boolean upPressed, downPressed, leftPressed, rightPressed;
 
+    //This method just send me the info of the KeyCode that was Typed
     @Override
     public void keyTyped(KeyEvent e)
     {
 
     }
 
+    //This method just send me the info of the KeyCode that is currently pressed
     @Override
     public void keyPressed(KeyEvent e)
     {
@@ -38,6 +40,7 @@ public class KeyHandler implements KeyListener {
         }
     }
 
+    //This method just send me the info of the KeyCode that was released
     @Override
     public void keyReleased(KeyEvent e)
     {
