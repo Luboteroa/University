@@ -24,6 +24,12 @@ public class GamePanel extends JPanel implements Runnable {
     TileManager tileManager = new TileManager(this);
 
     int FPS = 60;
+
+    //WORLD SETTINGS
+    public final int maxWorldCol = 50;
+    public final int maxWorldRow = 50;
+    public final int worldWidth = tileSize*maxScreenCol;
+    public final int worldHeight = tileSize*maxScreenRow;
     public GamePanel()
     {
         //Set the previous settings to the current panel

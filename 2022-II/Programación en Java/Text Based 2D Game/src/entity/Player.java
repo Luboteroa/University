@@ -1,5 +1,6 @@
 package entity;
 
+import entity.Entity;
 import main.GamePanel;
 import main.KeyHandler;
 
@@ -13,19 +14,25 @@ public class Player extends Entity
     GamePanel gamePanel;
     KeyHandler keyHandler;
 
+    public final int screenX;
+    public final int screenY;
+
     public Player(GamePanel gamePanel, KeyHandler keyHandler)
     {
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
 
-        setDefaulValues();
+        screenX = gamePanel.screenWidth/2 - (gamePanel.tileSize/2);
+        screenY = gamePanel.screenHeight/2 - (gamePanel.tileSize/2);
+
+        setDefaultValues();
         getPlayerImage();
     }
 
-    public void setDefaulValues()
+    public void setDefaultValues()
     {
-        x = 100;
-        y = 100;
+        worldX = gamePanel.tileSize * 6;
+        worldY = gamePanel.tileSize * 0;
         speed = 4;
         direction = "down";
     }
@@ -52,30 +59,30 @@ public class Player extends Entity
 
     public void Update()
     {
-        //Change player values inside the game
+        //Change plaworldYer values inside the game
         if(keyHandler.upPressed == true || keyHandler.downPressed == true
                 || keyHandler.leftPressed == true || keyHandler.rightPressed)
         {
-            //Modify current position and current animation sprites
+            //ModifworldY current position and current animation sprites
             if(keyHandler.upPressed == true)
             {
                 direction = "up";
-                y -= speed;
+                worldY -= speed;
             }
             if(keyHandler.downPressed == true)
             {
                 direction = "down";
-                y += speed;
+                worldY += speed;
             }
             if(keyHandler.leftPressed == true)
             {
                 direction = "left";
-                x -= speed;
+                worldX -= speed;
             }
             if(keyHandler.rightPressed == true)
             {
                 direction = "right";
-                x += speed;
+                worldX += speed;
             }
 
             //Able images iterations
@@ -98,7 +105,7 @@ public class Player extends Entity
     public void Draw(Graphics2D g2)
     {
         //g2.setColor(Color.white);
-        //g2.fillRect(x, y, gamePanel.tileSize, gamePanel.tileSize);            //Draw a rectangle
+        //g2.fillRect(worldX, worldY, gamePanel.tileSize, gamePanel.tileSize);            //Draw a rectangle
 
         //Just make an iteration between two images for create an animation
         BufferedImage image = null;
@@ -149,6 +156,6 @@ public class Player extends Entity
                 }
                 break;
         }
-        g2.drawImage(image, x, y, gamePanel.tileSize, gamePanel.tileSize, null);
+        g2.drawImage(image, screenX, screenY, gamePanel.tileSize, gamePanel.tileSize, null);
     }
 }
