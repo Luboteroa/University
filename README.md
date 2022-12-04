@@ -1,151 +1,59 @@
-![](Documentation/Images/Banner.png)
+![](2022-II/Java Programming/Text Based 2D Game/imported assets/Pong Game.jpg)
 
-# FPS Sample
+# Java 2D Game Text Based
 
-**Update about the state of the project:**
-This project is based on Unity 2018.3 and no longer being actively maintained.
-Feel free to continue to use it as a learning resource or simply for
-inspiration. As always, you should upgrade to latest version of Unity
-and packages if you intend to start a project.
+**Proyecto actualmente en desarrollo**
+Este es un proyecto de un juego completamente hecho en texto, es decir, un juego completamente realizado
+por código utilizando Java con un *JDK 9*. Tiene una documentación bastante completa sobre absolutamente 
+todas las variables, métodos, clases y paquetes que pertenecen a esta. Véase aquí la
+documentación completa: ![](2022-II/Java Programming/Text Based 2D Game/uml/Documentacion/index)
 
-Thanks for checking out this sample!
+Gracias por echarle un vistazo a este proyecto!
 
-This is a fully functional, first person multiplayer shooter game made in
-Unity and with full source and assets. It was developed by a small
-team from Unity Technologies. Our goals are to test and showcase new
-features in Unity and to be of use for teams who can bootstrap on top of
-this, extract useful bits and tools or simply learn from and get inspired by
-what is in the project.
+Este es un juego con vista top-down en 2D donde un jugador (con personaje principal llamada Keit) debe 
+recorrer un mundo el cual, está lleno de puzzles, enemigos y distintos obstáculos que deberá vencer para
+poder ganar. Mi objetivo principal de este proyecto es compartir el cómo son las bases más fundamentales 
+del desarrollo de videojuegos. Esto debido a que, en este código tendrás que lidiar con funciones *Update* (funciones llamadas en cada frame),
+*Sprites* (Imágenes de 16 x 16),  *Animations* (Las que controlan las animaciones), entre otras.
 
-Visit our [landing page](https://unity.com/fps-sample) for more high
-level information about the project. Or reach out [in the forum](https://forum.unity.com/forums/fps-sample-game.184).
+Este fue un proyecto creado como inspiración en The Legend Of Zelda(1986), para la materia **Programación en Java** de la *Universidad Nacional de Colombia sede Manizales*. Visita mi página [Linkedin](https://www.linkedin.com/in/luis-carlos-botero-agudelo-ab8896175/) para más muestras de proyectos realizados en Unity, Unreal Engine, Java, entre otros para diferentes tecnologías como juegos en 2D, 3D, Realidad Virtual, Aumentada y Extendida. Puedes revisar estos otros proyectos que te pueden
+interesar en mis [Repositorios!](https://github.com/Luboteroa)
 
-The project is using a number of new technologies: We use the new [HD Render
-Pipeline](https://github.com/Unity-Technologies/ScriptableRenderPipeline), meaning 
-all content has been authored for HDRP. We are also using the new
-[network transport layer](https://github.com/Unity-Technologies/multiplayer) as well as the [Entity-Component System](https://unity3d.com/unity/features/job-system-ECS). 
-In the case of ECS, we have primarily adopted the "ECS-pattern" and use it in
-hybrid mode with a lot of regular components. As more and more features of
-Unity become available in ECS-aware versions, we will migrate to them.
+Las tecnologías que utilizamos son Java **(JDK 9)**, recomiendo utilizar Intellij IDEA como editor principal de texto para poder descargar y utilizar todas las librerías
+necesarias. Aunque si te sientes cómodo utilizando otro editor de Texto como Visual Studio Code, siéntete libre de hacerlo. Se requiere un principio de conocimiento
+básico para poder desarrollar este tipo de proyectos, como lo es la programación orientada objetos, clases, extensiones, entre otros factores básicos de desarrollo en 
+programación. Para más información sobre esto, recomiento leer [Java Tutorial](https://www.w3schools.com/java/) para aprender los principios básicos.
 
-## Status and prerequisites
+## Estados y Prerrequisitos
 
-Current status at a glance:
+Estados actuales de desarrollo
 ```
-Unity version: 2018.3.8f1
-Platforms    : Windows (client and server) and Linux (server only)
+Java         : JDK 9
+Plataformas  : Intellij IDEA
 ```
+## Obtención del proyecto
 
-## Getting the project
+Para obtener el proyecto debes clonarlo.
+>__IMPORTANTE__:
+> Este es un proyecto realizado sobre Java Intellij IDEA con las librerías específicas mencionadas anteriormente. 
+> No es ningún launcher para jugar el proyecto, de lo contrario esto
+> **No funcionará**. Para instalar Intellij IDEA recomiendo [ver](https://drive.google.com/file/d/1MoR2Us4HKEP-TjAl7YXJlZC4dbbFwxr1/view)
 
-To get the project folder you need to clone the project.
-Note, that 
+El proyecto pesa aproximadamente 1.94MB, a pesar de ser pequeño, asegurarse de tener el requisito de almacenamiento suficiente para su descarga y uso 
+(por lo menos el doble de almacenamiento).
 
-> __IMPORTANT__: 
-> This project uses Git Large Files Support (LFS). Downloading a zip file using the green button on Github
-> **will not work**. You must clone the project with a version of git that has LFS.
-> You can download Git LFS here: https://git-lfs.github.com/.
 
-The project size is about 18GB (size of Assets folder). Your cloned repository
-will be almost double of that due to git state. If it is much smaller,
-you most likely did not have LFS when you cloned.
+### Corriendo el proyecto
 
-## Getting the right version of Unity
+Una vez abierto el proyecto, el archivo principal de uso (clase main) es la que realizará toda la depuración y uso del proyecto.
+Se recomienda leer [Clase Main](2022-II/Java%20Programming/Text%20Based%202D%20Game/uml/Documentacion/main/Main.html)
 
-Once you have cloned the repository, you should install
-the version of Unity that is listed above in the prerequisites section. Make
-sure you include windows standalone support in your installation (and Linux support
-if you want to build the Linux headless server).
+## Agradecimiento
 
-## Opening the project for the first time
+Agradecimientos especiales al profesor Juan Bernardo de la materia programación en Java de la Universidad Nacional sede Manizales por su apoyo y compromiso con la materia.
 
-The following guide should take you to the point where
-you can hit play in the editor and run around the levels and also build a
-standalone version of the game and use it to spin up a server and connect a
-few clients to it.
+También se agradece a todos los proveedores de café Colombiano y a toda la comunidad de Stack Overflow, sin ellos este proyecto no sería posible.
 
-The first time you open the project you need patience! It takes a while
-to import all the assets.
+## Licencias
 
-> __NOTE__: Due to a bug in Unity 2018.3, you have to take the following step right after the initial import:
-> 1 Search for `Firstperson_Projection` in the Project search field. Select the 4 shaders, right click and reimport them.
-> 2 If you have script compile errors related to entities, you need to remove and re-install the entities package.
->
-> One day soon we will remove this note and there will be cake.
-
-Once the editor is ready, open the _Project Tools Window_ by
-navigating to ___FPS Sample > Windows > Project tools___.
-
-It should look like this:
-
-![](Documentation/Images/ProjectTools.png)
-
-Keep this window docked as you will use it a lot. From here you can open the
-levels, build assetbundles and build standalone players. Because this is a
-multiplayer game you will need to work with standalone players a lot.
-
-### Trying out preview mode
-
-From the Project Tools window click __Open__ next to Level_00. Our levels are
-split into multiple scenes but using these buttons will ensure you open all the scenes
-that make up a level.
-
-Once opened, try entering playmode in the editor. You should now
-be able to run around in the level. This is what we call 'preview mode'. Here
-you can move around and test your level, player traversal and weapons.
-
-### Building bundles and standalone
-
-Leave playmode again and in the Project Tools window, verify that
-it says "Building for: StandaloneWindows64..." under the Game headline.
-If it does not, change your platform in the usual way, using File > Build
-settings window.
-
-Now, in the Project Tools window in the bundles section, press __All \[force\]__.
-
-This will build the levels and other assets into assetbundles. The first time
-around this will take a significant amount of time as all shaders have to be
-compiled.
-
-Once you have built the bundles, hit __Build game__ in the game section.
-This builds the standalone player. Again, first time will be slow.
-
-> __NOTE__: Due to a limitation in Unity 2018.3, you have to look out for errors like this `Maximum number (256) of shader keywords exceeded, keyword <KEYWORD_NAME> will be ignored.` and similar. If you get these, you can close and open Unity and then try and build again. The errors are relatively harmless but can lead to graphical artifacts as some shaders will have wrong keywords.
-
-### Using the quick start launcher
-
-When this is done, locate the "Quick start" section at the bottom of the
-Project Tools window. Fill out the settings like this:
-
-> Mode: __Multiplayer__\
-> Level: __Level_00__\
-> Clients: __1__\
-> Headless: __Checked__\
-> Use editor: __Unused__
-
-Now hit the green __Start__ button. This should launch two processes: one is
-a standalone, headless server, the other is a client that will attempt to
-connect to the server.
-
-Congratulations! If you made it this far you should celebrate a bit!
-
-## Development of FPS Sample, Contributions etc.
-
-As of today, internally development of the project happens on Perforce. We
-push versions of the project to github from there. As we do that we will update
-the [CHANGELOG](CHANGELOG.md) with highlights but the full history is not
-carried over.
-
-For practical reasons we are not able to take larger contributions
-just now. But bugfixes are very welcome! Read the guidelines for
-contributing in [CONTRIBUTING](CONTRIBUTING.md).
-
-## More information
-
-Check out the [Documentation](Documentation/) folder for more information. In particular, the [Getting Started Guide](Documentation/GettingStarted.md) is a good place to, well, start.
-
-## License
-
-Our intention is that you can use everything in this project as a starting
-point or as bits and pieces in your own Unity games. For the legal words, see
-[LICENSE.md](LICENSE.md).
+No se requiere ninguna clase de licensia para la realización y uso de este proyecto.
