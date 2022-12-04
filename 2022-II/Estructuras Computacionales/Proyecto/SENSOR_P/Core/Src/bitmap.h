@@ -1,8 +1,8 @@
 /*
  * bitmap.h
  *
- *  Created on: Jun 21, 2022
- *      Author: Juan pablo
+ *  Created on: Nov 21, 2022
+ *      Author: Luis Carlos Botero A
  */
 
 #ifndef SRC_BITMAP_H_
